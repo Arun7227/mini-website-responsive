@@ -1,0 +1,305 @@
+body,*:after,*:before,*{
+    box-sizing: border-box;
+}
+body{
+    text-transform: capitalize;
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'bebas neue',cursive;
+}
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 18px;
+}
+p{
+    font-family:Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    text-align: justify;
+    
+    
+}
+/**********************
+       header 
+************************/
+.page_header{
+    margin-bottom: 50px;
+    background-color: black;
+}
+  .nav_title{
+    font-family: 'pacifico',cursive;
+    font-size: 46px;
+    font-style: normal;
+   }
+.nav_div{
+    justify-content: flex-end;
+}
+  .nav_list{
+    text-transform: uppercase;
+    font-family: 'bebas neue',cursive;
+    
+   }
+    .nav_list li:not(:last-child){
+          margin-right: 60px;
+    }
+     .nav_list a em{
+     display: block;
+     font-style: normal;
+     font-size: 24px;
+     }
+/**************************
+     header end
+***************************/
+
+/***************
+ container
+ ***************/
+
+ /* main visual */
+
+.main_visual{
+    
+}
+ 
+  .main_visual .image{
+    position: relative;
+  }
+  .main_visual .image_wrap{
+      height:70px ;
+      width: 220px;
+      background-color:rgba(63, 63,63,0.1);
+      position: absolute;
+      left: 0;
+      bottom: 0%;
+      margin-left:18px;
+
+  }
+   .image_wrap h1{
+     
+   }
+   .image_wrap small{
+       font-size: 18px;
+       font-family: 'bebas neue',cursive;
+       color: #e1e1e1;
+      
+
+   }
+    .main_visual figcaption{
+        padding: 17px;
+        background: #f7f7f7;
+        box-shadow: .5px .5px .5px black;
+    }
+    /* main visual end */
+
+
+
+/* claim */
+.claim{
+ margin:70px 0px;
+ display: flex;
+ justify-content: space-between;
+ padding: 12px;
+
+
+}
+ .claim_content{
+     width:30%;
+    height: auto;
+    margin-bottom: 70px;
+    
+     
+ }
+ 
+  .claim_content_title{
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+
+  }
+   .claim_content_title i{
+       font-size: 40px;
+       float: left;
+       width: 20%;
+       margin-right: 10%;
+   }
+    .claim_content_title h2{
+      
+        float: left;
+        width: 70%;
+    }
+.claim_content_btn{
+    padding: 5px;
+    color: white;
+   
+    margin-top: 10px;
+}
+  .claim_content_btn i{
+      font-size: 1em;
+      margin-right: 10px;
+  }
+   .claim_content_btn a{
+     text-decoration: none;
+     color: white;
+     text-transform: capitalize;
+     font-size: 1em;
+     font-family: 'bebas neue',cursive;
+
+   }
+   /* claim end */
+
+   /* my latest work */
+   .latest_works{
+       position: relative;
+       margin-bottom: 70px;
+     
+   }
+    .latest_works:before{
+        content: '';
+        display: block;
+        background-image: url(./pattern.jpg);
+        height: 30px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .work_wrap{
+       
+        position: absolute;
+        text-align:center;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+       
+        height: 30px;
+        
+    }
+    .work_wrap h3{
+        display: inline-block;
+        padding: 10px;
+        margin-top:-6px;
+        background-color: white;
+        
+    }
+.latest_works_works{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+
+}
+ .latest_works_works figure{
+     width: 22%;
+     margin-bottom: 40px;
+ }
+   .latest_works_works figcaption{
+
+   } 
+   .latest_works_works figcaption h5{
+       margin: 16px 0px;
+   }
+    .latest_works_works figcaption button{
+     margin-top: 15px;
+    }
+    .latest_works_works figcaption button a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: 'bebas neue',cursive;
+        margin-left: 5px;
+
+    }
+
+
+
+   /* my latest work end */
+
+
+/*******************
+    page footer 
+**********************/
+.page_footer{
+    width: 100%;
+   color: white;
+   font-size: 14px;
+   font-style: normal;
+   height: 75px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+.page_footer:before{
+    content: '';
+    display: block;
+    background-image: url(./pattern.jpg);
+  
+    height: 7px;
+    margin-bottom: 20px;
+
+}
+.footer_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.footer_copywright{
+    
+
+}
+.footer_credits{
+    
+
+}
+/*********************
+    page footer end
+**********************/
+
+
+
+  @media screen and (max-width:992px) {
+/* ****************
+    container
+******************/
+ 
+/* claim */
+   
+ .claim_content{
+        width: 100%;
+    }
+    
+    .claim_content_title{
+       max-width:300px;
+    }
+   
+        .claim_content_title i{
+            font-size: 40px;
+            float: left;
+            width: 20%;
+            margin-right: 10%;
+        }
+         .claim_content_title h2{
+           
+             float: left;
+             width: 70%;
+         }
+         .claim_content_btn{
+             
+         }
+    
+ /* claim end */
+
+ /* latest works */
+ .latest_works_works figure{
+     width: 100%;
+ }
+  }
